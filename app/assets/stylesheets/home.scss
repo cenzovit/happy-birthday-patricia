@@ -8,6 +8,11 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+#description {
+  display: none;
+  font-size: 56px;
+}
+
 .full-bleed-section {
   .full-bleed {
     z-index: -1;
