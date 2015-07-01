@@ -36,14 +36,16 @@ fontTypes = [
   "'Shadows Into Light Two', cursive"
 ]
 
+currentFontIndex = 0
+
 randomDescription = ->
   return descriptions[Math.floor(Math.random() * descriptions.length)]
 
-randomFont = ->
-  return fontTypes[Math.floor(Math.random() * fontTypes.length)]
+nextFont = ->
+  return fontTypes[(currentFontIndex++) % (fontTypes.length)]
 
 newDescription = ->
-  $("#description").html(randomDescription()).css("font-family", randomFont()).fadeIn(2000)
+  $("#description").html(randomDescription()).css("font-family", nextFont()).fadeIn(2000)
 
 ready = ->
   newDescription()

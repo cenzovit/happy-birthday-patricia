@@ -6,11 +6,34 @@ body {
   width: 100vw;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  text-align: center;
 }
 
 #description {
   display: none;
-  font-size: 56px;
+  font-size: 2em;
+}
+
+.row {
+  position: absolute;
+  width: 100%;
+}
+
+.top {
+  font-size: 1.5em;
+  top: 10px;
+}
+
+.middle {
+  top: 30%;
+}
+
+.bottom {
+  font-size: .75em;
+  bottom: 10px;
 }
 
 .full-bleed-section {
@@ -33,5 +56,15 @@ body {
     text-align: center;
     color: #fff;
   }
+}
+@media (max-width: 850px){ 
+  body {
+    font-size: 24px;
+  }
+}
 
- }
+@media (max-width: 675px){ 
+  body {
+    font-size: 18px;
+  }
+}
