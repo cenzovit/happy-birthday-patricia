@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
-
-# anguler
-gem 'angularjs-rails'
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
