@@ -36,18 +36,29 @@ fontTypes = [
   "'Shadows Into Light Two', cursive"
 ]
 
-currentFontIndex = 0
+shuffle = (a) ->
+  i = a.length
+  while --i > 0
+    j = ~~(Math.random() * (i + 1))
+    t = a[j]
+    a[j] = a[i]
+    a[i] = t
+  a
 
-randomDescription = ->
-  return descriptions[Math.floor(Math.random() * descriptions.length)]
+currentFontIndex = 0
+currentDescriptionIndex = 0
+
+nextDescription = ->
+  return descriptions[(currentDescriptionIndex++) % (descriptions.length)]
 
 nextFont = ->
   return fontTypes[(currentFontIndex++) % (fontTypes.length)]
 
 newDescription = ->
-  $("#description").html(randomDescription()).css("font-family", nextFont()).fadeIn(2000)
+  $("#description").html(nextDescription()).css("font-family", nextFont()).fadeIn(4000)
 
 ready = ->
+  shuffle(descriptions)
   newDescription()
   interval = setInterval( ->
     $("#description").fadeOut(2000, ->
