@@ -1,0 +1,91 @@
+/* line 4, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  text-align: center;
+}
+
+/* line 12, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+body {
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* line 21, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+#description {
+  display: none;
+  font-size: 2rem;
+}
+
+/* line 26, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+.row {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 31, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+.top {
+  font-size: 1.5rem;
+  top: 10px;
+}
+/* line 35, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+.top .description {
+  font-size: .65rem;
+}
+
+/* line 40, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+.middle {
+  top: 40%;
+}
+
+/* line 44, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+.bottom {
+  font-size: .75rem;
+  bottom: 10px;
+}
+
+/* line 50, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+.full-bleed-section .full-bleed {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(/assets/patricia-full-bleed-blurred-c3042692307ab6d2dfca15973c9cc5c59c2027a8785eaeb5e2fedcab6fcd0212.png);
+  background-size: cover;
+}
+
+@media (max-width: 850px) {
+  /* line 62, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+  html {
+    font-size: 24px;
+  }
+}
+@media (max-width: 675px) {
+  /* line 68, /Users/Cenzo/patricia/app/assets/stylesheets/home.scss.erb */
+  html {
+    font-size: 18px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
